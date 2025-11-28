@@ -1,5 +1,5 @@
-Infer-Pred [EARLY ACCESS]
-=========================
+Infer-Pred
+==========
 
 This repository accompanies the paper:
 
