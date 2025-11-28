@@ -1,0 +1,11 @@
+,change-point vs random-walk
+t statistic,8.36978440799275
+p value,3.1714675651601796e-09
+degrees of freedom,29.0
+mean difference in correlation,0.15468191721931823
+median difference in correlation,0.12996361100624731
+Cohen's d,1.5281065739042172
+proportion of participants better matched by first model,1.0
+CI lower bound for the proportion (binomial test),0.8842966917779725
+CI upper bound for the proportion (binomial test),1.0
+binomial test p value,1.862645149230957e-09

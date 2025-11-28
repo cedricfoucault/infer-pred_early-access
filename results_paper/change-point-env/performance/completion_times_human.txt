@@ -1,0 +1,4 @@
+Completion times — median [IQR] | mean ± sem
+Total —  53min27s [44min14s, 65min14s] | 57min28s ± 3min33s
+Instructions —  9min39s [6min11s, 17min34s] | 13min45s ± 2min30s
+Task —  39min48s [35min36s, 48min15s] | 43min42s ± 2min7s

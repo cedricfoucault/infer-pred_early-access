@@ -1,0 +1,25 @@
+# This corresponds to the main change-point model in the paper
+name: Change-point model
+id: null # will be replaced by the name of this file
+type: bayes
+inference:
+  state_space:
+    hmean: "true"
+    hsd:
+      type: discrete
+      values: [10, 30]
+  dynamics:
+    hmean:
+      type: change_point
+      p_cp: 0.0625 # 1/16
+      min_change_amount: 1 # this encodes the assumption that the hidden state
+                           # value does not stay the same when a change point occurs
+    hsd:
+      type: change_point
+      p_cp: 0.0625 # 1/16
+      min_change_amount: 1 # this encodes the assumption that the hidden state
+                           # value does not stay the same when a change point occurs
+bet_fun: max_reward
+prob_updt:
+  fun_type: truncnorm
+  fun_params: [0, 8]

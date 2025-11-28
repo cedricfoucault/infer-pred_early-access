@@ -1,0 +1,18 @@
+# In the paper, this corresponds to the change-point model variant without
+# variance inference, assuming a fixed low variance.
+name: Change-point - Fixed variance (low)
+id: null
+type: bayes
+inference:
+  sd: 10
+  state_space:
+    hmean: "true"
+  dynamics:
+    hmean:
+      type: change_point
+      p_cp: 0.0625 # 1/16
+      min_change_amount: 1 
+bet_fun: max_reward
+prob_updt:
+  fun_type: truncnorm
+  fun_params: [0, 8]

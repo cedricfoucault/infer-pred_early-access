@@ -1,0 +1,17 @@
+# In the paper, this corresponds to the random-walk model variant without
+# variance inference, assuming a fixed low variance.
+name: Random-walk - Fixed variance (low)
+id: null
+type: bayes
+inference:
+  sd: 10
+  state_space:
+    hmean: "true"
+  dynamics:
+    hmean:
+      type: random_walk
+      volatility: 15
+bet_fun: max_reward
+prob_updt:
+  fun_type: truncnorm
+  fun_params: [0, 8]

@@ -1,0 +1,64 @@
+# Task parameters for the change-point environment (Experiment 1 in the paper).
+
+# Generative parameters (used to generate observation sequences, i.e. beam
+# locations in the infer-pred task)
+
+state_space:
+  hmean:
+    type: continuous
+    min: 0
+    max: 360
+    is_angular: true
+  hsd:
+    type: discrete
+    values: [10, 30]
+
+dynamics:
+  hmean:
+    type: change_point
+    p_cp: 0.0625 # 1/16
+    min_change_amount: 1 # this encodes the assumption that the hidden state
+                         # value does not stay the same when a change point occurs
+  hsd:
+    type: change_point
+    p_cp: 0.0625 # 1/16
+    min_change_amount: 1 # this encodes the assumption that the hidden state
+                         # value does not stay the same when a change point occurs
+
+# The below constraints are used only for generating sequences for the experiment
+# but are not considered as part of the inference since they are unknown (uninstructed)
+# to the subject during the experiment.
+constraints:
+  # These value of min/max run length keep the mean run length approximately
+  # equal to 16, the original value without constraint (=1/p_cp).
+  hmean:
+    min_run_length: 5
+    max_run_length: 40
+    min_change_amount: 90
+  hsd:
+    min_run_length: 5
+    max_run_length: 40
+    min_change_amount: 1
+
+# Response parameters (paddle widths, initial positions, reward table)
+
+responses:
+  widths: [60, 120]
+  initial_values:
+    location: 0
+    width: 60
+  reward_table:
+    catch_per_width:
+      60: 10
+      120: 5
+    miss_per_width:
+      60: -10
+      120: -10
+
+# Across-sequence parameters
+# Number of observations per sequence
+nobs: 100
+# Number of sequences per subject
+nseq: 10
+# For simulations only: Number of subjects to simulate
+nsub: 20

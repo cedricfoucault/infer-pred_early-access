@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infer-Pred Task</title>
+    <link rel="shortcut icon" href="./img/favicon.ico" />
+    <link rel="stylesheet" href="infer-pred-task.css" />
+    <!-- jQuery needed for pavlovia-connector -->
+    <script src="utils/jquery-2.2.0.min.js"></script>
+</head>
+<body>
+    <div id="flex">
+      <canvas id="canvas" width="800" height="600" style="display: none;"></canvas>
+      <div id="instruction-container" style="display: none;"></div>
+      <div id="consent-container" style="display: none;"></div>
+      <div id="practice-help-panel" class="tooltip" style="display: none">
+        Press <span class="symbol">'→'</span> or <span class="symbol">'d'</span>, or use mouse: Move clockwise<br/>
+        Press <span class="symbol">'←'</span> or <span class="symbol">'a'</span>, or use mouse: Move counterclockwise<br/>
+        Press <span class="symbol">'↑'</span> or <span class="symbol">'w'</span>, or scroll up: Switch to large paddle<br/>
+        Press <span class="symbol">'↓'</span> or <span class="symbol">'s'</span>, or scroll down: Switch to small paddle<br/>
+      </div>
+      <div id="text-box" style="display: none;">
+        <p style="font-weight: bold;">Block <span id="block-completed">1</span>/<span id="total-blocks">10</span> completed!</p>
+        <p>You gained <span style="font-weight: bold"><span id="points">100</span> points (£<span id="pounds">0.05</span>)</span> for this block.</p>
+        <p id="next-block-text">Press the space bar or click to continue to the next block.</p>
+        <div style="display: none" id="final-block-text">
+          <p style="font-weight: bold;">You have completed the task.</p>
+
+          <p>Your total score is <span style="font-weight: bold"><span id="total-points">100</span> points (£<span id="total-pounds">0.05</span>)</span>.</p>
+
+          <p>Thank you for your participation!</p>
+
+          <a target="_blank" id="prolific-completion-link" style="display: none;">Complete your submission on Prolific</a>
+        </div>
+        <p id="saving-data" style="font-style: italic; display: none;">Saving data, please wait…</p>
+        <div id="feedback-form" style="display: none; margin-top: 24px">
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd49SViZA3BMcocr96MigKucpgrcD1WpR8oxowTTWES4ju0-Q/viewform?embedded=true"
+            width="640" height="460" frameborder="0" marginheight="0"
+            marginwidth="0"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div id="help-panel" style="display: none;">
+        Press <span class="symbol">'→'</span> or <span class="symbol">'d'</span>, or use mouse: Move clockwise<br/>
+        Press <span class="symbol">'←'</span> or <span class="symbol">'a'</span>, or use mouse: Move counterclockwise<br/>
+        Press <span class="symbol">'↑'</span> or <span class="symbol">'w'</span>, or scroll up: Use large paddle<br/>
+        Press <span class="symbol">'↓'</span> or <span class="symbol">'s'</span>, or scroll down: Use small paddle<br/>
+        Press space or click: Confirm paddle location and size
+    </div>
+
+    <script src="infer-pred-task.js" type="module"></script>
+</body>
+</html>

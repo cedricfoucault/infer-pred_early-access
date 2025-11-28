@@ -1,0 +1,7 @@
+name: Ideal Observer
+id: null # will be replaced by the name of this file
+type: bayes
+inference:
+  state_space: "true"
+  dynamics: "true"
+bet_fun: max_reward

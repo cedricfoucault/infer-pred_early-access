@@ -1,0 +1,9 @@
+,Metric,Mean,Sem
+0,Proportion of beams caught,0.8117777777777778,0.008047898329259187
+1,Absolute prediction error,26.168496011902437,0.3781513329781639
+2,Mean absolute error,13.299628564936011,0.511131470877162
+3,Proportion of trials using large paddle,0.33893333333333336,0.02989694688342259
+4,Proportion of trials switching from small to large paddle,0.08940849096083174,0.007797775915575878
+5,Proportion of trials switching from large to small paddle,0.2135080087651608,0.02871002747739978
+6,Reward per trial (pts),4.759555555555555,0.0941903365407438
+7,Score per block (pts),585.9555555555556,9.419033654074381

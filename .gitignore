@@ -1,0 +1,18 @@
+# Ignore __pycache__ directory
+__pycache__
+
+# Ignore all outputs saved in the results directory.
+results/
+
+# Ignore all .DS_Store files
+.DS_Store
+
+# Code editor/IDE files
+*.sublime*
+.vscode
+
+# Ignore the gitignore directory.
+gitignore/
+
+# Data – Exclude heavy within-block event logs (not needed for analyses)
+data/**/*block-events_*.json

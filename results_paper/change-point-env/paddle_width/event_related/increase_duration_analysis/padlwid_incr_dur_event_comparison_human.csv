@@ -1,0 +1,3 @@
+,event_type,n_participants,median_duration,mean_duration,sem_duration,wilcoxon_statistic,wilcoxon_p_value,proportion_inc_gt_cp,proportion_inc_gt_cp_ci_low,proportion_inc_gt_cp_ci_high,binomial_p_value
+0,change_point_mean,27,2.0,2.259259259259259,0.17371910221568257,0.0,5.3037380315585015e-06,1.0,0.875444970258133,1.0,1.4901161193847656e-08
+1,increase_variance,27,11.0,9.555555555555555,0.5581137681133165,0.0,5.3037380315585015e-06,1.0,0.875444970258133,1.0,1.4901161193847656e-08

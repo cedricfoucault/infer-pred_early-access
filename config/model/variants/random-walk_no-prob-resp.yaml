@@ -1,0 +1,20 @@
+# In the paper, this corresponds to the random-walk model variant without the
+# response-probability mechanism
+name: Random-walk model (no prob. resp.)
+id: null
+type: bayes
+inference:
+  state_space:
+    hmean: "true"
+    hsd: "true"
+    hvol:
+      type: discrete
+      values: [10, 30]
+  dynamics:
+    hmean:
+      type: random_walk
+    hsd: "true"
+    hvol:
+      type: change_point
+      p_cp: 0.0625 # 1/16
+bet_fun: max_reward

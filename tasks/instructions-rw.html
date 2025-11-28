@@ -1,0 +1,189 @@
+<div id="instruction-content-container">
+  <div id="instruction-1">
+    <h1>Capture the Beams</h1>
+    <p>You are a space explorer on a mission to capture mysterious energy
+      beams emitted from a distant star. These energy beams represent
+      valuable resources that will help your space colony thrive.</p>
+    <p>However, collecting the beams is not an easy task because the star
+    is unpredictable, shooting out beams in various directions. Both the average
+    direction of the beams and their spread can change over time.</p>
+    <p>Your job is to predict where the next beam will appear and capture
+    it using your collection device, called the "paddle".</p>
+  </div>
+  <div id="instruction-2">
+    <p>During the task, you will observe beams emitted by the star one after the
+    other. The beams will be shot from the center of your screen (where the star
+    is located), as shown below. Each time a beam is about to be emitted, you
+    will have to predict its direction in order to capture it.</p>
+    <img src="img/instruction-rw-2.png" srcset="img/instruction-rw-2@2x.png 2x"/>
+  </div>
+  <div id="instruction-3">
+    <p><strong>How the beams behave</strong></p>
+    <p>Imagine the star is like a flashlight. It has a certain average direction
+    and spread. The energy beams are emitted in a particular direction on
+    average, but they spread out from this average direction (similar to how
+    light spreads out from a flashlight). The star's emission spread
+    determines how much the beams tend to deviate from the average
+    direction.</p>
+    <img src="img/instruction-rw-3.png" srcset="img/instruction-rw-3@2x.png 2x">
+  </div>
+  <div id="instruction-4">
+    <p>The emission spread depends on the state the star is currently in.
+    It can be in one of two states: either the focused state, where the
+    emission spread is low and the beams are tightly focused around the
+    average direction, or the diffuse state, where the emission spread is
+    high and the beams are widely scattered.</p>
+    <img src="img/instruction-rw-4.png" srcset="img/instruction-rw-4@2x.png 2x">
+  </div>
+  <div id="instruction-5">
+    <p>Determining both the average direction and the current state of the star
+    is critical to your task. You will need to position your paddle
+    accurately (close to the average direction) and choose between a large
+    or small paddle, depending on whether the star is in the diffuse
+    or focused state, to maximize your energy collection.</p>
+  </div>
+  <div id="instruction-6">
+    <p>Here, you see the paddle that you will use to collect energy from the
+      beams. During the task, you will move the paddle along a ring to intercept
+      the beams.</p>
+    <img src="img/instruction-rw-6.png" srcset="img/instruction-rw-6@2x.png 2x">
+  </div>
+  <!-- Practice moving the paddle using the mouse or keyboard controls provided below.
+    To complete this practice, bring the paddle to the target location (black dot). -->
+  <div id="instruction-7">
+    <p>In addition to moving the paddle, you can choose and switch between two
+    paddle sizes: a small paddle or a large paddle.</p>
+    <p>The large paddle has a higher chance of capturing a beam but has a lower
+    energy yield (+5 energy points per captured beam) compared to the small
+    paddle (+10 points per captured beam). However, you will lose points when
+    the beam is not intercepted (-10 points per uncaptured beam).</p>
+    <img src="img/instruction-rw-7.png" srcset="img/instruction-rw-7@2x.png 2x">
+  </div>
+  <!-- Practice switching from the small paddle to the large paddle using the mouse or keyboard controls provided below. -->
+  <!-- Practice switching from the large paddle to the small paddle using the mouse or keyboard controls provided below. -->
+  <div id="instruction-8">
+    <p>All things considered, it is best to use the small paddle when the
+    star is in the focused state and the large paddle when it is in the
+    diffuse state.</p>
+    <img src="img/instruction-rw-8.png" srcset="img/instruction-rw-8@2x.png 2x">
+  </div>
+  <div id="instruction-9">
+    <p>To determine the average direction and the state of the star (focused or
+    diffuse), you will need to observe the beams carefully. However, the task is
+    even more challenging because <strong>the star's behavior evolves over time:
+    its average direction gradually changes, and it can switch states at any
+    moment.</strong></p>
+  </div>
+  <div id="instruction-10">
+    <p><strong>1) Changes in average direction:</strong> The average direction of the beams <strong>gradually shifts over time</strong> due to external forces, such as solar winds. These shifts occur gradually rather than abruptly, but keep in mind that individual beams may ocasionally deviate significantly from the average direction due to randomness in their spread. Focus on overall patterns in beam location rather than any single beam as you estimate where the next beam will appear.</p>
+    <img src="img/instruction-rw-10.png" srcset="img/instruction-rw-10@2x.png 2x">
+  </div>
+  <div id="instruction-11">
+    <p><strong>2) Changes in state (spread):</strong> Due to internal fluctuations,
+      the star can switch between the two states, going from the focused state to the diffuse state or vice versa.
+      <p>While changes in average direction occur gradually over time, changes in state occur abruptly and sporadically.</p>
+    <img src="img/instruction-rw-11.png" srcset="img/instruction-rw-11@2x.png 2x">
+  </div>
+  <div id="instruction-12">
+    <p>During the task, your active participation is crucial. You will need to
+    continuously estimate the current average direction and state of the star
+    based on the emitted beams, and adjust your paddle's location and size
+    accordingly.</p>
+    <p>You will have the opportunity to adjust the paddle after each
+    beam emission. When you’re ready, you'll confirm your choice by clicking
+    with the mouse or pressing the spacebar, and the next beam will appear.</p>
+  </div>
+  <div id="instruction-13">
+    <p><strong>Check your understanding before you begin the task</strong></p>
+
+    <div id="quiz-container">
+        <div id="question-1" class="question">
+            <p>What happens to the average direction of the beams emitted by the star?</p>
+            <div class="answers">
+                <div class="answer"><input type="radio" name="q1" value="A"> A) The average direction remains constant throughout the task.</div>
+                <div class="answer"><input type="radio" name="q1" value="B"> B) The average direction changes drastically every time a beam is emitted.</div>
+                <div class="answer"><input type="radio" name="q1" value="C"> C) The average direction changes abruptly at unpredictable times, and remains constant between those changes.</div>
+                <div class="answer"><input type="radio" name="q1" value="D"> D) The average direction changes gradually over time.</div>
+            </div>
+        </div>
+
+        <div id="question-2" class="question">
+            <p>What does it mean if the beams are landing very close to each other?</p>
+            <div class="answers">
+                <div class="answer"><input type="radio" name="q2" value="A"> A) The average direction of the star has changed.</div>
+                <div class="answer"><input type="radio" name="q2" value="B"> B) The star is about to change its state.</div>
+                <div class="answer"><input type="radio" name="q2" value="C"> C) The star is in a diffuse state, and the spread of the beams is high.</div>
+                <div class="answer"><input type="radio" name="q2" value="D"> D) The star is in a focused state, and the spread of the beams is low.</div>
+            </div>
+        </div>
+
+        <div id="question-3" class="question">
+            <p>Why should you choose the small paddle when the star is in the focused state?</p>
+            <div class="answers">
+                <div class="answer"><input type="radio" name="q3" value="A"> A) The small paddle yields more points per captured beam (+10 points).</div>
+                <div class="answer"><input type="radio" name="q3" value="B"> B) The small paddle increases your chances of capturing a beam.</div>
+                <div class="answer"><input type="radio" name="q3" value="C"> C) The small paddle makes the beams more predictable.</div>
+                <div class="answer"><input type="radio" name="q3" value="D"> D) The small paddle allows you to move faster.</div>
+            </div>
+        </div>
+
+        <div id="question-4" class="question">
+            <p>What is the consequence of missing a beam with your paddle?</p>
+            <div class="answers">
+                <div class="answer"><input type="radio" name="q4" value="A"> A) You gain 5 points.</div>
+                <div class="answer"><input type="radio" name="q4" value="B"> B) You cannot use the paddle for the next trial.</div>
+                <div class="answer"><input type="radio" name="q4" value="C"> C) You lose 10 points.</div>
+                <div class="answer"><input type="radio" name="q4" value="D"> D) Nothing happens.</div>
+            </div>
+        </div>
+    </div>
+    <button id="quiz-submit-button">Submit answers</button>
+    <div id="quiz-feedback" class="feedback"></div>
+  </div>
+  <div id="instruction-14">
+    <p>We are about to begin the task. The task will consist of <span id="n-blocks">15</span> blocks. Each
+    block takes about <span id="block-duration">3</span> minutes. You will have the option to take a break
+    between two blocks.</p>
+
+    <p id="bonus-text" style="display: none;">The total number of points you earn during the task will
+    determine your bonus (added to your base pay). For every <span
+    id="points-per-pound">2000</span> points, you will receive £1, with a
+    maximum possible bonus of <span>£<span
+    id="max-bonus-pounds">4.20</span>.</p>
+  </div>
+  <div id="instruction-15">
+    <p><strong>Final tips before you begin</strong></p>
+    <ul>
+    <li><strong>Watch for gradual shifts in average direction.</strong> Pay
+    attention to where the beams are landing and adjust your paddle location
+    accordingly.</li>
+    <li><strong>Watch for sudden changes in spread.</strong> If the beams are
+    landing closer together, it's a sign that the star is in the focused state,
+    and you should use the small paddle to earn more points. If the beams start
+    being very scattered, switch to the large paddle to increase your chances of
+    catching them and earn more points.</li>
+    <li><strong>Be judicious.</strong> Evaluate the extent to which unexpected
+    beam locations result from randomness or average directional shifts.</li>
+    <li><strong>Be responsive.</strong> Remember that you will lose 10 points
+    for each beam that you miss. Every beam counts.</li>
+    </ul>
+  </div>
+</div>
+<div id="instruction-content-to-nav-interspace">
+</div>
+<div id="instruction-nav">
+  <div id="instruction-nav-next-prev-container">
+    <button class="instruction-nav-button" id="previous-instruction-button"
+      disabled>← Previous</button>
+    <span id="instruction-progress-label"><span id="current-instruction-rank">1</span> / <span id="total-instructions">15</span></span>
+    <button class="instruction-nav-button" id="next-instruction-button">Next →</button>
+  </div>
+  <div>
+    <button class="instruction-nav-button" id="review-instructions-button"
+      style="display:none;">⇤ Review the instructions</button>
+  </div>
+  <div>
+    <button class="instruction-nav-button" id="start-or-resume-task-button"
+      style="visibility:hidden;">Begin the task ⇥</button>
+  </div>
+</div>

@@ -1,0 +1,13 @@
+# Short name for this model configuration.
+"name": "Dual delta-rule model (low ɑ)"
+
+# Type of model. The model parameters below only apply to a certain model type.
+"type": "delta-rule"
+
+# Learning rate parameter for the delta-rule run on signed location prediction
+# errors to produce the bet locations
+"alpha_loc": 0.2
+
+# Learning rate parameter for the delta-rule run on variance prediction
+# errors to produce the bet widths
+"alpha_var": 0.2

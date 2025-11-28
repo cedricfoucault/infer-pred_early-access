@@ -1,0 +1,183 @@
+body {
+  margin: 0;
+  background-color: #E5E5E5;
+}
+
+#flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  flex-direction: column;
+}
+
+canvas {
+/*  border: 1px solid black;*/
+  cursor: grab;
+}
+
+#text-box {
+  font: 14px/200% Arial, sans-serif;
+  text-align: center;
+}
+
+#instruction-content-container {
+  font: 14px/150% Arial, sans-serif;
+  text-align: center;
+  width: 640px;
+  /*  Use the three lines below to vertically center the instruction content.
+      Without them, the instruction content will be aligned to the top
+      across instructions  */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#instruction-content-container h1 {
+  font-size: 21px;
+  line-height: 200%;
+}
+
+#instruction-content-container li {
+  margin-bottom: 0.5em;
+  text-align: justify;
+}
+
+#instruction-content-to-nav-interspace {
+  height: 20px;
+}
+
+#instruction-nav {
+  text-align: center;
+}
+
+button {
+  background: none!important;
+  border: none!important;
+  padding: 0!important;
+  font: 14px Arial, sans-serif;
+  color: #0066CC;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button:hover {
+  color: #75B3F0;
+}
+
+button:disabled {
+  color: #8E8E93;
+  cursor: auto;
+}
+
+button.instruction-nav-button {
+  min-width: 200px;
+  min-height: 40px;
+}
+
+a {
+  font: 14px Arial, sans-serif;
+  color: #0066CC;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #75B3F0;
+}
+
+#instruction-progress-label {
+  color: #808080;
+  font: 10px Arial, sans-serif;
+}
+
+/* Help panel for the mouse/keyboard controls */
+
+/* Help panel displayed during the task */
+#help-panel {
+  font: 10px/150% Arial, sans-serif;
+  color: hsl(0 0% 40%);
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  width: auto;
+  height: auto;
+  padding: 10px;
+/*  border: 1px solid hsl(0 0% 50%);*/
+  background-color: hsl(0 0% 85%);
+}
+
+/* Help panel displayed in the task instructions  */
+.tooltip {
+  font: 12px/150% Arial, sans-serif;
+  color: hsl(0 0% 40%);
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+  background-color: hsl(0 0% 85%);
+}
+
+span.symbol {
+  font: 10px/150% Courier New, Arial, sans-serif;
+}
+
+/* Quiz */
+
+#quiz-container {
+/*  font: 12px/150% Arial, sans-serif;*/
+  font-size: 12px;
+  text-align: left;
+}
+
+.two-columns {
+  display: flex;
+  flex-direction: row;
+}
+
+.question {
+  margin-bottom: 12px;
+}
+
+.question p {
+  font-weight: bold;
+  margin: 0 0 0 0;
+}
+
+.answers {
+  margin: 0 0 0 0;
+}
+
+#quiz-submit-button {
+  font: 14px/150% Arial, sans-serif;
+}
+
+.feedback {
+  margin: 0 0 0 0;
+  height: 0px;
+  font: 14px/150% Arial, sans-serif;
+}
+
+/* Informed consent */
+
+#consent-container {
+  flex-direction: column;
+  width: 640px;
+  font: 14px/150% Arial, sans-serif;
+}
+
+#consent-container h1 {
+  font-size: 21px;
+  line-height: 200%;
+}
+
+#consent-container ul {
+  padding: 0 0 0 12px;
+  list-style-position: outside;
+  font: 14px/150% Arial, sans-serif;
+}
+
+#accept-consent-button {
+  font: 16px/150% Arial, sans-serif;
+  text-align: center;
+}

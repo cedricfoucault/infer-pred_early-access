@@ -1,0 +1,16 @@
+name: Random-walk - Fixed vol.
+id: null
+type: bayes
+inference:
+  state_space:
+    hmean: "true"
+    hsd: "true"
+  dynamics:
+    hmean:
+      type: random_walk
+      volatility: 15
+    hsd: "true"
+bet_fun: max_reward
+prob_updt:
+  fun_type: truncnorm
+  fun_params: [0, 8]
