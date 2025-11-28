@@ -6,7 +6,7 @@ This repository accompanies the paper:
 ***Environmental dynamics shape human learning: change points versus
 random walks***\
 by **Cédric Foucault, Lilian A. Weber, and Laurence Hunt**\
-(Preprint link to be added once available on [bioRxiv](https://www.biorxiv.org/)).
+(Preprint: [biorxiv.org/content/10.1101/2025.11.26.690700](https://www.biorxiv.org/content/10.1101/2025.11.26.690700)).
 
 The repository includes everything needed to reproduce the results
 presented in the paper, and:
