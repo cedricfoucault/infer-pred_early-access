@@ -104,38 +104,6 @@ to perform the change-point experiment as subject '47' with 3 blocks and skip th
 
 See `tasks/urlParams.js` for the full list of configurable parameters.
 
-## Running the task
-
-You can run the task locally in your web browser.
-
-In one terminal tab:
-
-```
-cd tasks
-python -m http.server
-```
-
-Then, open your web browser (e.g. Google Chrome, Firefox) and navigate to
-```
-http://localhost:8000/infer-pred-task.html?version=cp
-```
-
-To run the task/experiment in the change-point environment
-
-```
-http://localhost:8000/infer-pred-task.html?version=rw
-```
-
-To run the task/experiment in the random-walk environment.
-
-In addition to the version parameter (`version=cp` or `rw`), other parameters you can change through the URL are:
-- `subjectId` (this is used to identify the participant in the recorded data)
-- `nBlocks` (changes the number of blocks needed to complete the experiment, e.g. `nBlocks=2` to perform only two blocks)
-- `skipInstructions` (no value - this is used for debugging/testing the task, to skip the instructions and go directly to the task blocks)
-- Refer to `tasks/urlParams.js` for a more complete list of parameters
-
-Different parameters are delimited by `&` in the URL — for example, if you want to perform the change-point experiment as subject '47' with 3 blocks and skip the instructions, you would run `http://localhost:8000/infer-pred-task.html?version=cp&subjectId=47&nBlocks=3&skipInstructions`
-
 ## Modeling framework
 
 Several example use cases and demo scripts illustrating how the modeling
