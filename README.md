@@ -1,3 +1,5 @@
+> **Superseded:** the data, code, and results of the paper, in its revised version, are now at [github.com/cedricfoucault/infer-pred](https://github.com/cedricfoucault/infer-pred). This repository is kept, read-only, as the version provided with the original submission.
+
 Infer-Pred
 ==========
 
@@ -7,8 +9,6 @@ This repository accompanies the paper:
 random walks***\
 by **Cédric Foucault, Lilian A. Weber, and Laurence Hunt**\
 (Preprint: [biorxiv.org/content/10.1101/2025.11.26.690700](https://www.biorxiv.org/content/10.1101/2025.11.26.690700)).
-
-This paper is currently under peer review. The repository will be finalized in light of reviewer feedback.
 
 The repository includes everything needed to reproduce the results
 presented in the paper, and:
